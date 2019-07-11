@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"edu.cnm.deepdive","c":"Generator","l":"oscillatingSquares(int)"}]
