@@ -2,8 +2,7 @@
 
 * Basic implementation: 5 points
 * Basic unit tests: 5 points
-* Extra credit implementation: 5 points
-* Extra credit unit tests: None
+* Extra credit: None
 
 ## Basic task
 
@@ -62,27 +61,3 @@ In evaluating your implementation, we reserve the right to include additional te
 * The method to be completed includes a `TODO` comment to that effect.    
 
 * In unit testing, when comparing an array returned from a method to an array of expected values, one of the `assertArrayEquals` methods (in the `org.junit.jupiter.api.Assertions` class) is better suited to the task than any of the `assertEquals` methods.    
-
-## Extra credit 
-
-The good news is that you may find you've already implemented the extra credit!
-
-The task is here modify the implementation (but **not** the signature or return type) of the `oscillatingSquares` method, so that instead of explicitly creating an array, then iterating over it to assign values to the elements, the implementation uses the `IntStream` class to perform the necessary operations, including construction of the array that is finally returned from the method.
-
-### Implementation
-
-For extra credit, modify the implementation of `IntStream` so that no explicit iteration (using the `for`, `while`, or `do-while` statements, the *`Iterable`*`.forEach` method, etc.) is used; instead, implement using stream operations exclusively.
-
-The required functionality remains unchanged.
-
-### Unit tests
-
-No new unit tests are required; however, the unit tests written for the initial implementation must still pass, in order for your extra credit implementation to get full credit.
-
-### Hints
-
-* The `IntStream` class has static methods that construct an `IntStream` instance containing a range of sequential values.
-
-* All of the implementations of the `BaseStream` interface include a `map` method that replaces each value in a stream with a corresponding value, produced by passing the original value to a method (or lambda, as appropriate) and taking the return value from the method as a new value.
-
-* All of the `BaseStream` implementations in the standard library can collect a stream's values into an array, using the `toArray` method.
