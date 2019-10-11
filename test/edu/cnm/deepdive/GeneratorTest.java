@@ -6,12 +6,15 @@ import org.junit.jupiter.api.Test;
 
 class GeneratorTest {
 
-  int[] testArr = {0, -1, 4, -9, 16, -25, 36, -49, 64, -81, 100, -121, 144, -169};
+    int[] testArr = {0, -1, 4, -9, 16, -25, 36, -49, 64, -81, 100, -121, 144, -169};
 
-  @Test
-  void oscillatingSquares() {
-    for (int i = 0; i < testArr.length; i++) {
-      assertEquals(testArr[i], Generator.oscillatingSquares(testArr.length)[i]);
+    @Test
+    void oscillatingSquares() {
+        for (int i = 0; i < testArr.length; i++) {
+            assertEquals(Generator.oscillatingSquares(testArr.length)[i], testArr[i]);
+        }
+        for (int i = 1; i < testArr.length; i++) {
+            assertNotEquals(Generator.oscillatingSquares(testArr.length)[i] * (-1), testArr[i]);
+        }
     }
-  }
 }
