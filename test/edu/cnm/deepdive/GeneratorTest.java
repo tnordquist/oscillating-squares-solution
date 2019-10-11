@@ -11,16 +11,6 @@ import org.junit.jupiter.params.provider.MethodSource;
 
 class GeneratorTest {
 
-  private static final int INPUT_Int_1 = 0;
-  private static final int[] EXPECTED_ARR_1 = {};
-  private static final int INPUT_INT_2 = 1;
-  private static final int[] EXPECTED_ARR_2 = {0};
-  private static final int INPUT_INT_3 = 5;
-  private static final int[] EXPECTED_ARR_3 = {0, -1, 4, -9, 16};
-  private static final int INPUT_INT_4 = 7;
-  private static final int[] EXPECTED_ARR_4 = {0, -1, 4, -9, 16, -25, 36};
-  private static final int INPUT_INT_5 = 10;
-  private static final int[] EXPECTED_ARR_5 = {0, -1, 4, -9, 16, -25, 36, -49, 64, -81};
 
   @ParameterizedTest
   @MethodSource
